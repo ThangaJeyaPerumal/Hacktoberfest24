@@ -1,5 +1,3 @@
-// Here’s how you can implement Breadth-First Search (BFS) in C++ using the graph structure
-
 #include <iostream>
 #include <unordered_map>
 #include <list>
@@ -20,7 +18,7 @@ public:
 
     // Function to perform BFS traversal from a given source vertex
     void BFS(int start) {
-        // Vector to track visited vertices
+        // Vector to track visited vertices; size based on the number of vertices
         std::vector<bool> visited(adjList.size(), false);
         // Queue to help with the BFS traversal
         std::queue<int> q;
